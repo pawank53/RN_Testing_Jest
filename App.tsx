@@ -11,6 +11,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import Greeting from './src/components/Greeting';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,6 +30,7 @@ function AppContent() {
   return (
     <View style={styles.container}>
       <Text>Hello</Text>
+      <Greeting name='Pawan' age={25}/>
     </View>
   );
 }

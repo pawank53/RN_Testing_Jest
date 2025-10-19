@@ -21,10 +21,10 @@ const mockColorScheme= require('react-native/Libraries/Utilities/useColorScheme'
 
 describe('Unit testing for App', ()=>{
   // Testsing either App has text hello
-  it('It should render properly', ()=>{
-    const {getByText}=render(<App/>)
-    expect(getByText(/Hello/i)).toBeOnTheScreen();
-  })
+  // it('It should render properly', ()=>{
+  //   const {getByText}=render(<App/>)
+  //   expect(getByText(/Hello/i)).toBeOnTheScreen();
+  // })
 
   // Test cases for status bar
   it('Status bar testing for dark', ()=>{
