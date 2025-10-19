@@ -12,6 +12,7 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 import Greeting from './src/components/Greeting';
+import Counter from './src/components/Counter';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,8 +30,7 @@ function AppContent() {
 
   return (
     <View style={styles.container}>
-      <Text>Hello</Text>
-      <Greeting name='Pawan' age={25}/>
+      <Counter/>
     </View>
   );
 }
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor:'rgba(226, 108, 53, 1)'
   },
 });
 
