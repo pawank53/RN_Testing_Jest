@@ -13,6 +13,7 @@ import {
 } from 'react-native-safe-area-context';
 import Greeting from './src/components/Greeting';
 import Counter from './src/components/Counter';
+import UserProfile from './src/components/UserProfile';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,7 +31,7 @@ function AppContent() {
 
   return (
     <View style={styles.container}>
-      <Counter/>
+      <UserProfile/>
     </View>
   );
 }
